@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit {    
   registerMode = false;
-  values: any;
-
+  
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
@@ -22,5 +21,4 @@ export class HomeComponent implements OnInit {
   cancelRegisterMode(registerMode: boolean) {
     this.registerMode = registerMode;
   }
-
 }
